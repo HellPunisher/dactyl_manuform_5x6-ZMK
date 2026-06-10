@@ -31,3 +31,5 @@ How to do this the simplest way is this:
 
 NOTE:
 ***I would highly advise you to give [ZMK](ZMK.dev) a read it literally has everything you would need to know.***
+
+P.S. ADD https://zmk.studio/ 
