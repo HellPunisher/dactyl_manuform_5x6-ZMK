@@ -70,8 +70,8 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                     RC(3,11) RC(
                 , <&key_physical_attrs 100 100  800 500 0 0 0> , <&key_physical_attrs 100 100  900 500 0 0 0>
                 
                 /* Ряд 5 матрицы, линия 2 (Y=600) */
-                , <&key_physical_attrs 100 100  200 600 0 0 0> , <&key_physical_attrs 100 100  300 600 0 0 0> 
-                , <&key_physical_attrs 100 100 1000 600 0 0 0> , <&key_physical_attrs 100 100 1100 600 0 0 0>
+                , <&key_physical_attrs 100 100  400 600 0 0 0> , <&key_physical_attrs 100 100  500 600 0 0 0> 
+                , <&key_physical_attrs 100 100  800 600 0 0 0> , <&key_physical_attrs 100 100  900 600 0 0 0>
                 ;
         };
     };
