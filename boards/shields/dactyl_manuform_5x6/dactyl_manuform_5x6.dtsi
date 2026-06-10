@@ -33,27 +33,27 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                     RC(3,11) RC(
         >;
     };
 
-    kscan0: kscan {
+   kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "col2row";
 
         row-gpios
-            = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R0 -> D2 (0.15)
-            , <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R1 -> D3 (0.17)
-            , <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R2 -> D4 (0.20)
-            , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R3 -> D5 (0.13)
-            , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R4 -> D6 (0.24)
-            , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R5 -> D9 (1.06)
+            = <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R0 -> P0.15 (D2)
+            , <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R1 -> P0.17 (D3)
+            , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R2 -> P0.20 (D4)
+            , <&gpio0 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R3 -> P0.13 (D5)
+            , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R4 -> P0.24 (D6)
+            , <&gpio1  6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // R5 -> P1.06 (D9)
             ;
 
         col-gpios
-            = <&pro_micro 10 GPIO_ACTIVE_HIGH> // C0 -> D10 (1.11)
-            , <&pro_micro 11 GPIO_ACTIVE_HIGH> // C1 -> D11 (0.28)
-            , <&pro_micro 12 GPIO_ACTIVE_HIGH> // C2 -> D12 (0.03)
-            , <&pro_micro 13 GPIO_ACTIVE_HIGH> // C3 -> D13 (1.13)
-            , <&pro_micro 14 GPIO_ACTIVE_HIGH> // C4 -> D14 (0.02)
-            , <&pro_micro 15 GPIO_ACTIVE_HIGH> // C5 -> D15 (0.29)
+            = <&gpio1 11 GPIO_ACTIVE_HIGH> // C0 -> P1.11 (D10)
+            , <&gpio0 28 GPIO_ACTIVE_HIGH> // C1 -> P0.28 (D11)
+            , <&gpio0  3 GPIO_ACTIVE_HIGH> // C2 -> P0.03 (D12)
+            , <&gpio1 13 GPIO_ACTIVE_HIGH> // C3 -> P1.13 (D13)
+            , <&gpio0  2 GPIO_ACTIVE_HIGH> // C4 -> P0.02 (D14)
+            , <&gpio0 29 GPIO_ACTIVE_HIGH> // C5 -> P0.29 (D15)
             ;
     };
 };
