@@ -8,6 +8,15 @@
 #define ADJ 3
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        ZMKunlock {
+            bindings = <&studio_unlock>;
+            key-positions = <17 29>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
